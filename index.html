@@ -435,17 +435,15 @@
       
         
           
-            <ul>
-<li>载入公钥<br><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</code></li>
-<li>安装ELRepo<br><code>rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</code></li>
-<li>载入elrepo-kernel元数据<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel repolist</code></li>
-<li>查看可用的rpm包<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel list kernel*</code></li>
-<li>安装最新版本的kernel<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml.x86_64</code></li>
-<li>删除旧版本工具包<br><code>yum remove kernel-tools-libs.x86_64 kernel-tools.x86_64</code></li>
-<li>安装新版本工具包<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml-tools.x86_64</code></li>
-<li>更改启动内核<br><code>grub2-set-default 0</code><br><code>grub2-mkconfig -o /etc/grub2.cfg</code></li>
-<li>重启查看<br><code>reboot</code><br><code>uname -r</code></li>
-</ul>
+            <h5 id="载入公钥"><a href="#载入公钥" class="headerlink" title="载入公钥"></a>载入公钥</h5><p><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</code></p>
+<h5 id="安装ELRepo"><a href="#安装ELRepo" class="headerlink" title="安装ELRepo"></a>安装ELRepo</h5><p><code>rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</code></p>
+<h5 id="载入elrepo-kernel元数据"><a href="#载入elrepo-kernel元数据" class="headerlink" title="载入elrepo-kernel元数据"></a>载入elrepo-kernel元数据</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel repolist</code></p>
+<h5 id="查看可用的rpm包"><a href="#查看可用的rpm包" class="headerlink" title="查看可用的rpm包"></a>查看可用的rpm包</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel list kernel*</code></p>
+<h5 id="安装最新版本的kernel"><a href="#安装最新版本的kernel" class="headerlink" title="安装最新版本的kernel"></a>安装最新版本的kernel</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml.x86_64</code></p>
+<h5 id="删除旧版本工具包"><a href="#删除旧版本工具包" class="headerlink" title="删除旧版本工具包"></a>删除旧版本工具包</h5><p><code>yum remove kernel-tools-libs.x86_64 kernel-tools.x86_64</code></p>
+<h5 id="安装新版本工具包"><a href="#安装新版本工具包" class="headerlink" title="安装新版本工具包"></a>安装新版本工具包</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml-tools.x86_64</code></p>
+<h5 id="更改启动内核"><a href="#更改启动内核" class="headerlink" title="更改启动内核"></a>更改启动内核</h5><p><code>grub2-set-default 0</code><br><code>grub2-mkconfig -o /etc/grub2.cfg</code></p>
+<h5 id="重启查看"><a href="#重启查看" class="headerlink" title="重启查看"></a>重启查看</h5><p><code>reboot</code><br><code>uname -r</code></p>
 
           
         

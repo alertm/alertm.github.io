@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=el">
+<meta name="description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=elr">
 <meta name="keywords" content="centos 内核升级">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos7 内核升级">
 <meta property="og:url" content="http://yoursite.com/2018/12/11/centos7-内核升级/index.html">
 <meta property="og:site_name" content="AlertM">
-<meta property="og:description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=el">
+<meta property="og:description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=elr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-11T05:21:29.166Z">
+<meta property="og:updated_time" content="2018-12-11T05:51:37.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos7 内核升级">
-<meta name="twitter:description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=el">
+<meta name="twitter:description" content="载入公钥rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 安装ELReporpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 载入elrepo-kernel元数据yum --disablerepo=\* --enablerepo=elr">
 
 
 
@@ -310,17 +310,15 @@
       
 
       
-        <ul>
-<li>载入公钥<br><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</code></li>
-<li>安装ELRepo<br><code>rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</code></li>
-<li>载入elrepo-kernel元数据<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel repolist</code></li>
-<li>查看可用的rpm包<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel list kernel*</code></li>
-<li>安装最新版本的kernel<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml.x86_64</code></li>
-<li>删除旧版本工具包<br><code>yum remove kernel-tools-libs.x86_64 kernel-tools.x86_64</code></li>
-<li>安装新版本工具包<br><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml-tools.x86_64</code></li>
-<li>更改启动内核<br><code>grub2-set-default 0</code><br><code>grub2-mkconfig -o /etc/grub2.cfg</code></li>
-<li>重启查看<br><code>reboot</code><br><code>uname -r</code></li>
-</ul>
+        <h5 id="载入公钥"><a href="#载入公钥" class="headerlink" title="载入公钥"></a>载入公钥</h5><p><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</code></p>
+<h5 id="安装ELRepo"><a href="#安装ELRepo" class="headerlink" title="安装ELRepo"></a>安装ELRepo</h5><p><code>rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</code></p>
+<h5 id="载入elrepo-kernel元数据"><a href="#载入elrepo-kernel元数据" class="headerlink" title="载入elrepo-kernel元数据"></a>载入elrepo-kernel元数据</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel repolist</code></p>
+<h5 id="查看可用的rpm包"><a href="#查看可用的rpm包" class="headerlink" title="查看可用的rpm包"></a>查看可用的rpm包</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel list kernel*</code></p>
+<h5 id="安装最新版本的kernel"><a href="#安装最新版本的kernel" class="headerlink" title="安装最新版本的kernel"></a>安装最新版本的kernel</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml.x86_64</code></p>
+<h5 id="删除旧版本工具包"><a href="#删除旧版本工具包" class="headerlink" title="删除旧版本工具包"></a>删除旧版本工具包</h5><p><code>yum remove kernel-tools-libs.x86_64 kernel-tools.x86_64</code></p>
+<h5 id="安装新版本工具包"><a href="#安装新版本工具包" class="headerlink" title="安装新版本工具包"></a>安装新版本工具包</h5><p><code>yum --disablerepo=\* --enablerepo=elrepo-kernel install -y kernel-ml-tools.x86_64</code></p>
+<h5 id="更改启动内核"><a href="#更改启动内核" class="headerlink" title="更改启动内核"></a>更改启动内核</h5><p><code>grub2-set-default 0</code><br><code>grub2-mkconfig -o /etc/grub2.cfg</code></p>
+<h5 id="重启查看"><a href="#重启查看" class="headerlink" title="重启查看"></a>重启查看</h5><p><code>reboot</code><br><code>uname -r</code></p>
 
       
     </div>
@@ -415,8 +413,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -467,6 +474,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#载入公钥"><span class="nav-number">1.</span> <span class="nav-text">载入公钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ELRepo"><span class="nav-number">2.</span> <span class="nav-text">安装ELRepo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#载入elrepo-kernel元数据"><span class="nav-number">3.</span> <span class="nav-text">载入elrepo-kernel元数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查看可用的rpm包"><span class="nav-number">4.</span> <span class="nav-text">查看可用的rpm包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装最新版本的kernel"><span class="nav-number">5.</span> <span class="nav-text">安装最新版本的kernel</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除旧版本工具包"><span class="nav-number">6.</span> <span class="nav-text">删除旧版本工具包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装新版本工具包"><span class="nav-number">7.</span> <span class="nav-text">安装新版本工具包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更改启动内核"><span class="nav-number">8.</span> <span class="nav-text">更改启动内核</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#重启查看"><span class="nav-number">9.</span> <span class="nav-text">重启查看</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
